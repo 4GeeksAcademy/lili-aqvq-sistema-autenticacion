@@ -5,3 +5,8 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

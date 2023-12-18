@@ -46,6 +46,26 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+
+
+
+			
+			handleSubmitLogin: (e, navigate) => {
+				e.preventDefault()
+				const { username, password } = getStore()
+				const { login } = getActions()
+				login({ username, password }, navigate) // { username: username, password: password }
+				console.log("Enviando Formulario")
+			},
+
+
+
+			handleChange: e => {
+				const { name, value } = e.target;
+				setStore({
+					[name]: value
+				})
 			}
 		}
 	};
