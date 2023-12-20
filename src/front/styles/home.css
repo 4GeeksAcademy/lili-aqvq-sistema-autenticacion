@@ -1,12 +1,16 @@
-/*
-    home.css: This website contains selectors only used in home.css
-
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
-body {
-    background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg');
-    background-repeat: no-repeat;
+body::after {
+    content: "";
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
