@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import { Link, Routes, Route, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export const Home = () => {
 
@@ -69,7 +69,7 @@ export const Home = () => {
 
 	return (
 		<div className="text-center m-auto w-25 mt-5">
-			<div style={{backgroundColor: 'rgba(0, 102, 102, 0.4)', padding: '20px', borderRadius: '10px' }}>
+			<div style={{ backgroundColor: 'rgba(0, 102, 102, 0.4)', padding: '20px', borderRadius: '10px' }}>
 				<h1 style={{ color: 'white', marginBottom: '20px' }}>Login</h1>
 
 				<div className={alertColor} role="alert">{msg}</div>
@@ -86,10 +86,10 @@ export const Home = () => {
 
 
 
-				<button type="button" className="btn btn-success w-25 py-2 m-3" onClick={() => sendLoginForm()}>Login</button>
+				<button type="button" className="btn btn-success w-50 py-2 m-3" onClick={() => sendLoginForm()}>Login</button>
 				<p className='mt-3' style={{ fontSize: '15px', color: 'white' }}>
 					Don't have an account yet?{' '}
-					<Link to="/signup" syle={{ color: 'black', textDecoration: 'underline' }}>
+					<Link to="/signup" syle={{ textDecoration: 'underline', color: 'black' }}>
 						Sign up
 					</Link>
 				</p>

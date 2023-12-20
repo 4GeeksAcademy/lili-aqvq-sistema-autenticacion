@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../store/appContext";
-import { Link, Routes, Route, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "../../styles/private.css";
 
 export const Private = () => {

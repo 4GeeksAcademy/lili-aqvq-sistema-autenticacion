@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
-import { Link, Routes, Route, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 
 export const SignUp = () => {
@@ -82,7 +82,7 @@ export const SignUp = () => {
                         <label htmlFor="floatingConfirmPassword">Confirm Password</label>
                     </div>
 
-                    <button type="button" className="btn btn-success w-25 py-2 m-3" onClick={() => sendForm()}>Sign up</button>
+                    <button type="button" className="btn btn-success w-50 py-2 m-3" onClick={() => sendForm()}>Sign up</button>
 
                     <p className='mt-3' style={{ fontSize: '15px', color: 'white' }}>
                         Already have an account with us?{' '}
